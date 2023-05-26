@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop Sortable List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <script>
+    $( function() {
+      $( ".sortable-list" ).sortable();
+    } );
+    </script>
+</head>
+<body> 
+    <h3><p>a project made with <i><a href=""></a></i></p></h3>
+    <div class="container">
+        <ul class="sortable-list">
+            <li class="item" draggable="true">
+                <div class="details">
+                    <img src="./images/img-1.jpg" alt="Person 1">
+                    <span><b>Person 1</b></span>
+                </div>
+                <i class="uil uil-draggabledots"></i>
+            </li>
+            
+            <li class="item" draggable="true">
+                <div class="details">
+                    <img src="./images/img-2.jpg" alt="Person 2">
+                    <span><b>Person 2</b></span>
+                </div>
+                <i class="uil uil-draggabledots"></i>
+            </li>
+            
+            <li class="item" draggable="true">
+                <div class="details">
+                    <img src="./images/img-3.jpg" alt="Person 3">
+                    <span><b>Person 3</b></span>
+                </div>
+                <i class="uil uil-draggabledots"></i>
+            </li>
+            
+            <li class="item" draggable="true">
+                <div class="details">
+                    <img src="./images/img-4.jpg" alt="Person 4">
+                    <span><b>Person 4</b></span>
+                </div>
+                <i class="uil uil-draggabledots"></i>
+            </li>
+            
+            <li class="item" draggable="true">
+                <div class="details">
+                    <img src="./images/img-5.jpg" alt="Person 5">
+                    <span><b>Person 5</b></span>
+                </div>
+                <i class="uil uil-draggabledots"></i>
+            </li>
+            
+            <li class="item" draggable="true">
+                <div class="details">
+                    <img src="./images/img-6.jpg" alt="Person 6">
+                    <span><b>Person 6</b></span>
+                </div>
+                <i class="uil uil-draggabledots"></i>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #595db8;
+}
+
+h3{
+    margin: 30px 0;
+    background-color: #333;
+    height: 50px;
+}
+
+.container, h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sortable-list{
+    background-color: #333;
+    width: 445px;
+    border-radius: 6px;
+    padding: 30px 25px 20px;
+}
+
+.sortable-list .item{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #595db8;
+    padding: 10px 13px;
+    margin-bottom: 11px;
+    border-radius: 5px;
+}
+
+.item .details{
+    display: flex;
+    align-items: center;
+}
+
+.item .details img{
+    width: 43px;
+    height: 43px;
+    margin-right: 12px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.item .details span, .item i{
+    font-size: 1.13rem;
+}
+
+.item i{
+    color: antiquewhite;
+}
+
+.item.dragging :where(.details, i){
+    opacity: 0;
+}
